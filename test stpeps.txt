@@ -1,0 +1,38 @@
+
+
+1. To follow any of the tweet
+post  -  http://localhost:8772/subscribeForHashTag
+
+{
+"userId":"pankaj",
+"hashTag":"ishanKishan"
+}
+
+2. check hashtag scbscribers record from step 1 will appear
+http://localhost:8771/hashTagSubscribers
+
+
+3. tweet against a specific hashtag
+Post  - http://localhost:8771/tweet
+
+{
+"tweetBy":"myFriend",
+"hashTag":"ishanKishan",
+"message":"amazing Today"
+}
+
+
+4. Verify the tweets against the subscribed hashtag
+Get  - http://localhost:8771/tweets
+
+5. Verify the tweets done
+get  -  http://localhost:8772/getUserSubTweets
+
+
+Internal call to subscribe
+post - http://localhost:8771/follow
+
+{
+"userId":"pankaj",
+"hashTag":"ishanKishan"
+}
